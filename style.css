@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    background-color: #f3f4f6;
+    margin: 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+}
+
+.grid article {
+    background-color: rgb(172, 169, 169);
+}
+
+.grid article:nth-child(3) {
+    background-color: red;
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+}
+
+.grid article:nth-child(4) {
+    background-color: blue;
+    grid-column: 1 / 3;
+}
